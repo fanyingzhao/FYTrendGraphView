@@ -102,6 +102,8 @@
     CGContextSaveGState(context);
     [self.pointColor setStroke];
     NSMutableArray* pointTempArray = [NSMutableArray array];
+    
+    BOOL isTouch = NO;
     for (NSInteger i = 0; i < self.valueArray.count; i++) {
         CGFloat xCurrentValue = xUnit * i + self.startX;
         CGFloat yCurrentValue = [self getPositionYWithValue:[self.valueArray[i] floatValue]];
@@ -110,9 +112,19 @@
         
         CGContextAddArc(context, xCurrentValue, yCurrentValue, kCircleRadius, 0, 2 * M_PI, YES);
         
-        if (_currentTouchPoint.x > xCurrentValue - kCircleRadius && _currentTouchPoint.x < xCurrentValue + kCircleRadius) {
+        if (!isTouch) {
             
-            // 碰到处理
+            if (_currentTouchPoint.x > xCurrentValue - kCircleRadius && _currentTouchPoint.x < xCurrentValue + kCircleRadius) {
+                
+                // 碰到处理
+                isTouch = YES;
+                [self addSubview:self.touchView];
+                
+            }else {
+                
+                isTouch = NO;
+                [self.touchView removeFromSuperview];
+            }
         }
         
         CGContextDrawPath(context, kCGPathFill);
@@ -324,5 +336,16 @@
     }
     
     return _verticalLineWidth;
+}
+
+- (UIView *)touchView
+{
+    if (!_touchView) {
+        
+        _touchView = [[UIView alloc] initWithFrame:CGRectMake(100, 10, 100, 40)];
+        _touchView.backgroundColor = [UIColor orangeColor];
+    }
+    
+    return _touchView;
 }
 @end

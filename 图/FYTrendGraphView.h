@@ -78,4 +78,7 @@
  */
 @property (nonatomic, assign) CGFloat verticalLineWidth;
 
+
+@property (nonatomic, strong) UIView* touchView;
+
 @end

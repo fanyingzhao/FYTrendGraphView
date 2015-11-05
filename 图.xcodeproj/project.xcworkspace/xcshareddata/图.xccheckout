@@ -10,14 +10,14 @@
 	<string>图</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>57A3B1EB097E1240F7E3EA54E93E3F8C5F8669D5</key>
+		<key>C37F2A1E7F47ACA8A5057BD9F6EB6499DB42EF98</key>
 		<string>https://github.com/fanyingzhao/FYTrendGraphView.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>图.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>57A3B1EB097E1240F7E3EA54E93E3F8C5F8669D5</key>
+		<key>C37F2A1E7F47ACA8A5057BD9F6EB6499DB42EF98</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>57A3B1EB097E1240F7E3EA54E93E3F8C5F8669D5</string>
+	<string>C37F2A1E7F47ACA8A5057BD9F6EB6499DB42EF98</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>57A3B1EB097E1240F7E3EA54E93E3F8C5F8669D5</string>
+			<string>C37F2A1E7F47ACA8A5057BD9F6EB6499DB42EF98</string>
 			<key>IDESourceControlWCCName</key>
 			<string>FYTrendGraphView</string>
 		</dict>
